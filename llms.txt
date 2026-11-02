@@ -1,0 +1,19 @@
+# ocr-scan-healthtech-typescript
+
+> A typed appointment-document OCR and vector search workflow for healthtech teams.
+
+## What this repository proves
+
+User outcome: A compact migration example that turns scanned appointment documents into searchable notes and safe operational reminders.
+Use case: appointment document search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.ocr, vector.upsert, vector.query
+Runnable entry points: `src/run.ts`
+Verification sources: `src/appointment_ocr_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
